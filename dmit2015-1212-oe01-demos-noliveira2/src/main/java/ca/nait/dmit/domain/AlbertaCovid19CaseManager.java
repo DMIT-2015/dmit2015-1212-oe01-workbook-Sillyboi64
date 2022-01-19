@@ -84,4 +84,22 @@ public class AlbertaCovid19CaseManager {
                 .count();
     }
 
+    public long activeCaseCountByAhsZone(String ahsZone) {
+        return albertaCovid19CaseList
+                .stream()
+                //.filter(item -> item.getCaseStatus().equalsIgnoreCase("Active")
+                //        && item.getAhsZone().equalsIgnoreCase(ahsZone)) also works like down below
+                .filter(item -> item.getCaseStatus().equalsIgnoreCase("Active"))
+                .filter(item -> item.getAhsZone().equalsIgnoreCase(ahsZone))
+                .count();
+    }
+
+    public long caseReportedCountByAhsZoneDateRange(String ahsZone, LocalDate fromDate, LocalDate toDate) {
+        return albertaCovid19CaseList
+                .stream()
+                .filter(item -> item.getAhsZone().equalsIgnoreCase(ahsZone))
+                .filter(item -> !item.getDateReported().isBefore(fromDate) && !item.getDateReported().isAfter(toDate))
+                .count();
+    }
+
 }

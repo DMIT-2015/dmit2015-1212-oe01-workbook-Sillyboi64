@@ -5,6 +5,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.io.IOException;
+import java.time.LocalDate;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -55,5 +56,19 @@ class AlbertaCovid19CaseManagerTest {
     @Test
     void countActiveCases() {
         assertEquals(70_223, caseManager.findActiveCaseCount());
+    }
+
+    @Test
+    void activeCaseCountByZone() {
+        assertEquals(24_985, caseManager.activeCaseCountByAhsZone("Edmonton Zone"));
+        assertEquals(33_975, caseManager.activeCaseCountByAhsZone("Calgary Zone"));
+    }
+
+    @Test
+    void CaseReportedCountByAhsZoneAndDateRange() {
+        assertEquals(13_274, caseManager.caseReportedCountByAhsZoneDateRange(
+                "Edmonton Zone", LocalDate.parse("2022-01-11"), LocalDate.parse("2022-01-17")));
+        assertEquals(19_288, caseManager.caseReportedCountByAhsZoneDateRange(
+                "Calgary Zone", LocalDate.parse("2022-01-11"), LocalDate.parse("2022-01-17")));
     }
 }
