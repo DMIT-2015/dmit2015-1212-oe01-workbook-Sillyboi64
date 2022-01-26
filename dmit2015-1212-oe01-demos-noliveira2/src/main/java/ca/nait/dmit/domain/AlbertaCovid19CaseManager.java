@@ -1,7 +1,6 @@
 package ca.nait.dmit.domain;
 
 import lombok.Getter;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
