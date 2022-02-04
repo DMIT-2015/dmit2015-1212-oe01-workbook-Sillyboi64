@@ -1,7 +1,6 @@
 package ca.nait.dmit.dmit20151212eo01jpademo.repository;
 
 import ca.nait.dmit.dmit20151212eo01jpademo.Entity.Movie;
-import ca.nait.dmit.dmit20151212eo01jpademo.repository.MovieRepository;
 import common.config.ApplicationConfig;
 
 
