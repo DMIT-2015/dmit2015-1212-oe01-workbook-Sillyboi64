@@ -12,17 +12,17 @@ public class BMI {
     private double height;
 
     public double bmi() {
-        return 703 * weight / Math.pow(height,2);
+        return 703 * weight / Math.pow(height, 2);
     }
 
     public String bmiCategory() {
-        if (bmi() < 18.5){
+        if (bmi() < 18.5) {
             return "Underweight";
-        }else if(bmi() >= 18.5 && bmi() <= 24.9){
+        } else if (bmi() >= 18.5 && bmi() <= 24.9) {
             return "Normal";
-        }else if(bmi() >= 25 && bmi() <= 29.9){
+        } else if (bmi() >= 25 && bmi() <= 29.9) {
             return "Overweight";
-        }else{
+        } else {
             return "Obese";
         }
     }

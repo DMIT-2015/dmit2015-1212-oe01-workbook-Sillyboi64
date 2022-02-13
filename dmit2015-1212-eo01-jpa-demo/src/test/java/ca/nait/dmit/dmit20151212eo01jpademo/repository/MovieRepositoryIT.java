@@ -40,7 +40,7 @@ public class MovieRepositoryIT {
     public static WebArchive createDeployment() {
         PomEquippedResolveStage pomFile = Maven.resolver().loadPomFromFile("pom.xml");
 
-        return ShrinkWrap.create(WebArchive.class,"test.war")
+        return ShrinkWrap.create(WebArchive.class, "test.war")
 //                .addAsLibraries(pomFile.resolve("groupId:artifactId:version").withTransitivity().asFile())
 //                .addAsLibraries(pomFile.resolve("com.h2database:h2:2.1.210").withTransitivity().asFile())
                 .addAsLibraries(pomFile.resolve("org.hsqldb:hsqldb:2.6.1").withTransitivity().asFile())
@@ -52,8 +52,9 @@ public class MovieRepositoryIT {
                 .addClasses(Movie.class, MovieRepository.class)
                 .addAsResource("META-INF/persistence.xml")
                 .addAsResource("META-INF/sql/import-data.sql")
-                .addAsWebInfResource(EmptyAsset.INSTANCE,"beans.xml");
+                .addAsWebInfResource(EmptyAsset.INSTANCE, "beans.xml");
     }
+
 
     @Order(2)
     @Test

@@ -1,6 +1,7 @@
 package ca.nait.dmit.domain;
 
 import lombok.Getter;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -15,9 +16,9 @@ public class AlbertaCovid19CaseManager {
     private static AlbertaCovid19CaseManager instance;
 
     public static AlbertaCovid19CaseManager getInstance() throws IOException {
-        if(instance == null){
+        if (instance == null) {
             synchronized (AlbertaCovid19CaseManager.class) {
-                if(instance == null){
+                if (instance == null) {
                     instance = new AlbertaCovid19CaseManager();
                 }
             }
@@ -29,7 +30,7 @@ public class AlbertaCovid19CaseManager {
     private List<AlbertaCovid19Case> albertaCovid19CaseList = new ArrayList<>();
 
     private AlbertaCovid19CaseManager() throws IOException {
-        try(var reader = new BufferedReader(new InputStreamReader(getClass().getResourceAsStream(
+        try (var reader = new BufferedReader(new InputStreamReader(getClass().getResourceAsStream(
                 "" + "/data/covid-19-alberta-statistics-data.csv")))) {
             String lineText;
             // Declare a delimiter that looks for a comma inside a value
@@ -50,13 +51,13 @@ public class AlbertaCovid19CaseManager {
                 // 4 - "Age Group"
                 // 5 - "Case Status"
                 // 6 - "Case Type"
-                currentCase.setId(Integer.parseInt(values[0].replaceAll("\"","")));//important to see how string is parsed into an int
-                currentCase.setDateReported(LocalDate.parse(values[1].replaceAll("\"",""), dateTimeFormatter));
-                currentCase.setAhsZone(values[2].replaceAll("\"",""));
-                currentCase.setGender(values[3].replaceAll("\"",""));
-                currentCase.setAgeGroup(values[4].replaceAll("\"",""));
-                currentCase.setCaseStatus(values[5].replaceAll("\"",""));
-                currentCase.setCaseType(values[6].replaceAll("\"",""));
+                currentCase.setId(Integer.parseInt(values[0].replaceAll("\"", "")));//important to see how string is parsed into an int
+                currentCase.setDateReported(LocalDate.parse(values[1].replaceAll("\"", ""), dateTimeFormatter));
+                currentCase.setAhsZone(values[2].replaceAll("\"", ""));
+                currentCase.setGender(values[3].replaceAll("\"", ""));
+                currentCase.setAgeGroup(values[4].replaceAll("\"", ""));
+                currentCase.setCaseStatus(values[5].replaceAll("\"", ""));
+                currentCase.setCaseType(values[6].replaceAll("\"", ""));
                 //adds object to list
                 albertaCovid19CaseList.add(currentCase);
             }
