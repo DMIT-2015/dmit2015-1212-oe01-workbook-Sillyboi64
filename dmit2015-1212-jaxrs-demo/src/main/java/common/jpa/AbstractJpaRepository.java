@@ -206,7 +206,7 @@ public abstract class AbstractJpaRepository<E extends Serializable, ID> {
         CriteriaQuery<Long> criteriaQuery = criteriaBuilder.createQuery(Long.class);
         Root<E> queryRoot = criteriaQuery.from(this.entityType);
         criteriaQuery.select(criteriaBuilder.count(queryRoot));
-        return ((Long) _entityManager.createQuery(criteriaQuery).getSingleResult()).intValue();
+        return _entityManager.createQuery(criteriaQuery).getSingleResult().intValue();
     }
 
     /**
