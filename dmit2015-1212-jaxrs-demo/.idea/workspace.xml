@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a1880ba-dd31-4109-a601-c128ae87cac1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/dmit2015/resource/TodoItemResourceArquillianRestAssuredIT.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/dmit2015/resource/TodoItemResourceRestAssuredIT.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/common/jpa/AbstractJpaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/jpa/AbstractJpaRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dmit2015-1212-jaxrs-demo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/dmit2015-1212-jaxrs-demo.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dmit2015/resource/TodoItemResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dmit2015/resource/TodoItemResource.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,11 +19,11 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTTP Request" />
-        <option value="DMIT2015 JPA Abstract Repository" />
-        <option value="DMIT2015 JPA Entity Repository" />
         <option value="DMIT2015 BeanValidator" />
         <option value="DMIT2015 JAX-RS Resource" />
         <option value="JUnit5 Test Class" />
+        <option value="DMIT2015 JPA Abstract Repository" />
+        <option value="DMIT2015 JPA Entity Repository" />
       </list>
     </option>
   </component>
@@ -32,6 +32,9 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectId" id="254bhehkMsuWTGUsGPNHwClDKGc" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -48,10 +51,10 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../dmit2015-1212-eo01-jpa-demo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
     <property name="settings.editor.splitter.proportion" value="0.24541485" />
   </component>
   <component name="RecentsManager">
@@ -70,13 +73,15 @@
     </key>
   </component>
   <component name="RunManager" selected="JBoss/WildFly Server.JBoss/WildFly 26.0.0.Final">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -177,11 +182,11 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JBoss/WildFly Server.JBoss/WildFly 26.0.0.Final" />
-      <item itemvalue="JUnit.TodoItemRepositoryIT" />
       <item itemvalue="HTTP Request.TodoItemHttpRequest | Get all TodoItems" />
       <item itemvalue="HTTP Request.TodoItemHttpRequest | Get a single TodoItem with an id of 1" />
       <item itemvalue="HTTP Request.TodoItemHttpRequest | POST a new TodoItem with valid data" />
+      <item itemvalue="JBoss/WildFly Server.JBoss/WildFly 26.0.0.Final" />
+      <item itemvalue="JUnit.TodoItemRepositoryIT" />
     </list>
     <recent_temporary>
       <list>
@@ -200,7 +205,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1644789429859</updated>
-      <workItem from="1644789431844" duration="13883000" />
+      <workItem from="1644789431844" duration="13991000" />
+      <workItem from="1645133839116" duration="6622000" />
+      <workItem from="1645225741403" duration="1754000" />
+      <workItem from="1645233381498" duration="6513000" />
+      <workItem from="1645246695540" duration="40000" />
+      <workItem from="1646249842418" duration="3706000" />
     </task>
     <task id="LOCAL-00001" summary="added correct files type jakarta ee9">
       <created>1644789504036</created>
@@ -230,7 +240,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644804826623</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="imprt problem on JsonProcessingException gotta wait for help">
+      <created>1644807412102</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1644807412102</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -240,6 +257,7 @@
     <MESSAGE value="added correct files type jakarta ee9" />
     <MESSAGE value="added jaxrs files with errors have to add idea code/file templates" />
     <MESSAGE value="fixed everything using the templates" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed everything using the templates" />
+    <MESSAGE value="imprt problem on JsonProcessingException gotta wait for help" />
+    <option name="LAST_COMMIT_MESSAGE" value="imprt problem on JsonProcessingException gotta wait for help" />
   </component>
 </project>
