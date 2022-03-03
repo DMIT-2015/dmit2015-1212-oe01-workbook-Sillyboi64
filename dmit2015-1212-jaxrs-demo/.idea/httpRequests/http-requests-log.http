@@ -1,0 +1,30 @@
+POST http://localhost:8080/dmit2015-1212-jaxrs-demo/webapi/TodoItems
+Content-Type: application/json
+
+{
+  "name": "Start DMIT2015 Assignment 3",
+  "complete": false
+}
+
+###
+
+GET http://localhost:8080/dmit2015-1212-jaxrs-demo/webapi/TodoItems/1
+
+###
+
+GET http://localhost:8080/dmit2015-1212-jaxrs-demo/webapi/TodoItems
+
+###
+
+GET http://localhost:8080/dmit2015-1212-jaxrs-demo/webapi/TodoItems
+
+###
+
+GET http://localhost:8080/dmit2015-1212-jaxrs-demo/webapi/TodoItems
+
+###
+
+GET http://localhost:8080/dmit2015-1212-jaxrs-demo/webapi/TodoItems
+
+###
+

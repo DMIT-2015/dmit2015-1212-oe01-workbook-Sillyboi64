@@ -6,9 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="6a1880ba-dd31-4109-a601-c128ae87cac1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dmit2015-1212-jaxrs-demo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/dmit2015-1212-jaxrs-demo.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dmit2015/resource/TodoItemResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dmit2015/resource/TodoItemResource.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,19 +70,6 @@
     </key>
   </component>
   <component name="RunManager" selected="JBoss/WildFly Server.JBoss/WildFly 26.0.0.Final">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="TodoItemHttpRequest | Get a single TodoItem with an id of 1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/TodoItemHttpRequest.http" index="2" requestIdentifier="Get a single TodoItem with an id of 1" runType="Run single request">
       <method v="2" />
     </configuration>
@@ -210,7 +194,8 @@
       <workItem from="1645225741403" duration="1754000" />
       <workItem from="1645233381498" duration="6513000" />
       <workItem from="1645246695540" duration="40000" />
-      <workItem from="1646249842418" duration="3706000" />
+      <workItem from="1646249842418" duration="3751000" />
+      <workItem from="1646259383819" duration="793000" />
     </task>
     <task id="LOCAL-00001" summary="added correct files type jakarta ee9">
       <created>1644789504036</created>
@@ -247,7 +232,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644807412102</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="fixed minor issues">
+      <created>1646253574273</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1646253574273</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -258,6 +250,7 @@
     <MESSAGE value="added jaxrs files with errors have to add idea code/file templates" />
     <MESSAGE value="fixed everything using the templates" />
     <MESSAGE value="imprt problem on JsonProcessingException gotta wait for help" />
-    <option name="LAST_COMMIT_MESSAGE" value="imprt problem on JsonProcessingException gotta wait for help" />
+    <MESSAGE value="fixed minor issues" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed minor issues" />
   </component>
 </project>

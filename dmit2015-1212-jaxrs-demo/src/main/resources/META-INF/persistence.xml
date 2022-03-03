@@ -11,7 +11,7 @@
         <properties>
             <property name="hibernate.dialect" value="org.hibernate.dialect.H2Dialect"/>
             <property name="jakarta.persistence.schema-generation.database.action" value="create"/>
-            <property name="jakarta.persistence.sql-load-script-source" value="META-INF/sql/import-data.sql" />
+            <property name="jakarta.persistence.sql-load-script-source" value="META-INF/sql/import-data.sql"/>
         </properties>
 
     </persistence-unit>
